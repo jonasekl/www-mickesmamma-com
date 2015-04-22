@@ -1,0 +1,6 @@
+data/*
+*.pyc
+example.py
+req.txt
+.env
+.vagrant
