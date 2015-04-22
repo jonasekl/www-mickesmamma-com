@@ -9,10 +9,11 @@ app.debug = True
 
 @app.route('/')
 def start():
-    terms = yaml.load(open('./mickesmamma.yml').read())['terms']
-    i = randint(0,2)
-    print i
-    return '<h1>%s</h1>' % terms[i]
+    return "HEJ"
+#    terms = yaml.load(open('./mickesmamma.yml').read())['terms']
+#    i = randint(0,2)
+#    print i
+#    return '<h1>%s</h1>' % terms[i]
 
 
 if __name__ == '__main__':
