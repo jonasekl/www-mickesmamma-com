@@ -9,6 +9,7 @@ app.debug = True
 
 @app.route('/')
 def start():
+    print "apa"
     return "HEJ"
 #    terms = yaml.load(open('./mickesmamma.yml').read())['terms']
 #    i = randint(0,2)
