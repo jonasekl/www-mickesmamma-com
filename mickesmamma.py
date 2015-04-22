@@ -9,8 +9,7 @@ app.debug = True
 
 @app.route('/')
 def start():
-    print "apa"
-    return "HEJ"
+    return render_template('start.html')
 #    terms = yaml.load(open('./mickesmamma.yml').read())['terms']
 #    i = randint(0,2)
 #    print i
