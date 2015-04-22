@@ -1,7 +1,7 @@
-import yaml
+#import yaml
 from flask import Flask, Response, request
 from flask import render_template
-from random import randint
+#from random import randint
 
 
 app = Flask(__name__)
