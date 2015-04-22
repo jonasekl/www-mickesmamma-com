@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def start():
-    terms = yaml.load(open('mickesmamma.yml').read())['terms']
+    terms = yaml.load(open('./mickesmamma.yml').read())['terms']
     i = randint(0,2)
     print i
     return '<h1>%s</h1>' % terms[i]
