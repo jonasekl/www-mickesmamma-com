@@ -10,8 +10,8 @@ app.debug = True
 @app.route('/')
 def start():
     terms = yaml.load(open('./mickesmamma.yml').read())['terms']
-    i = randint(0,2)
-    return render_template('start.html', term=terms[i])
+    i = randint(0,len(terms)-1)
+    return render_template('mickesmamma.html', term=terms[i])
 #    return '<h1>%s</h1>' % terms[i]
 
 
